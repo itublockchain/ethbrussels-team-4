@@ -1,0 +1,78 @@
+/* ./src/styles/Home.module.css */
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Limits the width on larger screens */
+    height: 100%;
+    max-height: 800px; /* Limits the height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 250px; /* Updated size */
+    margin: 0 auto 30px auto; /* Increased bottom margin for more space */
+  }
+  
+  .description {
+    color: #333;
+    margin: 10px 0 20px 0; /* Increased bottom margin for more space */
+    padding: 0 50px; /* Added padding for specified distance */
+  }
+  
+  .footer-note {
+    color: #333;
+    margin: 20px 0 10px 0; /* Increased top margin for more space */
+    padding: 0 50px; /* Added padding for specified distance */
+  }
+  
+  .btn {
+    background-color: #64915e; /* Updated color */
+    color: #fff;
+    border: none; /* Removed border */
+    border-radius: 20px;
+    padding: 15px; /* Increased padding */
+    margin: 10px 0; /* Increased margin for more space */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Added transform transition */
+    width: 80%;
+    max-width: 250px;
+    align-self: center;
+    font-size: 1.1em; /* Increased font size */
+  }
+  
+  .btn:hover {
+    background-color: #345b30; /* Darker color on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 480px) {
+    .container {
+      padding: 20px 10px; /* Adjusted padding for mobile */
+      border-radius: 0;
+      height: 100vh;
+    }
+  
+    .logo {
+      width: 200px; /* Adjusted size for mobile */
+    }
+  
+    .description,
+    .footer-note {
+      padding: 0 10px; /* Adjusted padding for mobile */
+    }
+  
+    .btn {
+      width: 90%;
+      padding: 12px;
+      font-size: 1em;
+    }
+  }
+  
